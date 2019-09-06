@@ -1,11 +1,48 @@
 body {
-  padding: 0 100px;
+  padding: 15px 15%;
+  background-image: url(../images/code.jpg);
+}
+nav {
+  text-align: center;
+  margin-bottom: 3em;
 }
 
+nav a {
+  padding: 1em;
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: fantasy;
+  font-size: 1em;
+}
+
+nav a:hover {
+  color: greenyellow;
+}
+
+nav a:active {
+  text-decoration: double;
+}
+
+
+header {
+  color: greenyellow;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3em;
+  margin: 2em 0;
+}
+
+.intro p {
+  font-size: 1em;
+  line-height: 1.5;
+  font-family: 'Courier New', Courier, monospace;
+  color: whitesmoke;
+  margin-bottom: 2em;
+}
 .details {
   background-image: url(../images/terminal.png);
+  background-size: 100% 100%;
   background-position: center top;
-  padding: 40px 0;
+  padding: 2em 0;
   font-family: 'Ubuntu Mono', monospace;
 }
 
@@ -14,7 +51,7 @@ body {
 }
 
 .details li {
-  margin-top: 30px;
+  margin-top: 3em;
   color: gainsboro;
 }
 
@@ -24,10 +61,65 @@ body {
 
 /* Optional tweaks */
   font-weight: bold;
-  padding-right: 10px;
+  padding-right: 1em;
 }
 
 .details p {
-  color: pink;
-  padding-left: 20px;
+  color: greenyellow;
+  padding-left: 1.6em;
+}
+
+.blinking-cursor {
+  font-weight: bolder;
+  color: white;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: white;
+  }
 }
