@@ -1,0 +1,33 @@
+body {
+  padding: 0 100px;
+}
+
+.details {
+  background-image: url(../images/terminal.png);
+  background-position: center top;
+  padding: 40px 0;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+.details ul {
+  list-style: none;
+}
+
+.details li {
+  margin-top: 30px;
+  color: gainsboro;
+}
+
+.details li::before {
+  content: "\003E"; /* Unicode bullet symbol */
+  color: gainsboro;  /* Bullet color */
+
+/* Optional tweaks */
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.details p {
+  color: pink;
+  padding-left: 20px;
+}
