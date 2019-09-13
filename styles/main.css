@@ -128,7 +128,11 @@ header {
   }
 }
 
-.projects h2 {
+.projects, .contact {
+  margin-top: 5em;
+}
+
+.projects-title, .contact-title {
   color: greenyellow;
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -156,15 +160,10 @@ header {
   margin: 0.5em;
 }
 
-.projects-title {
-  /* border-bottom: 2em solid whitesmoke; */
-  /* text-decoration: underline double whitesmoke; */
-  /* line-height: 2em; */
-
-}
-
 .project-tags, .project-links{
   margin-top: 2em;
 }
 
-.pr
+.contact-info a {
+  color: whitesmoke;
+}
