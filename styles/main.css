@@ -33,7 +33,7 @@ header {
 
 .intro {
   margin-bottom: 3.5em;
-  min-width: 360px;
+  /* min-width: 360px; */
 }
 
 .intro p {
