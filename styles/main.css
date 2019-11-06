@@ -45,12 +45,12 @@ header {
   width: 15px;
   border-radius: 50%;
   display: inline-block; }
-  .dot :first-of-type {
-    background-color: #df7979; }
-  .dot :nth-of-type(2) {
-    background-color: orange; }
-  .dot ::last-of-type {
+  .dot:last-of-type {
     background-color: lightgreen; }
+  .dot:nth-of-type(2) {
+    background-color: orange; }
+  .dot:first-of-type {
+    background-color: #df7979; }
 
 .details {
   background-color: #5A5D7A;

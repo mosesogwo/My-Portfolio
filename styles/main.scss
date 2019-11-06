@@ -64,14 +64,14 @@ header {
   width: 15px;
   border-radius: 50%;
   display: inline-block;
-  :first-of-type {
-    background-color: rgb(223, 121, 121);
+  &:last-of-type {
+    background-color: lightgreen;
   }
-  :nth-of-type(2) {
+  &:nth-of-type(2) {
     background-color: orange;
   }
-  ::last-of-type {
-    background-color: lightgreen;
+  &:first-of-type {
+    background-color: rgb(223, 121, 121);
   }
 }
 
