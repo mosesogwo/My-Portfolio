@@ -1,54 +1,80 @@
 body {
-  padding: 15px 15%;
-  background-image: url(../images/code.jpg);
+  background-color: #f6f9fc;
+  margin: 4% 15%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
 nav {
-  text-align: center;
-  margin-bottom: 3em;
+  text-align: right;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
 }
 
 nav a {
-  padding: 1em;
-  color: whitesmoke;
+  margin: 1rem 2rem;
+  color: black;
   text-decoration: none;
   font-family: fantasy;
   font-size: 1em;
 }
 
 nav a:hover {
-  color: greenyellow;
+  border-bottom: 4px solid #747fe0;
+  color: #7795f8;
 }
 
 nav a:active {
   text-decoration: double;
 }
 
-
 header {
-  color: greenyellow;
+  color: #747fe0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.3em;
+  font-size: 1.8em;
   margin: 2em 0;
 }
 
 .intro {
   margin-bottom: 3.5em;
-  /* min-width: 360px; */
 }
 
-.intro p {
-  font-size: 1em;
+.intro-text {
+  font-size: 1.2rem;
   line-height: 1.5;
-  font-family: 'Courier New', Courier, monospace;
-  color: whitesmoke;
+  font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+  color: #525f7f;
   margin-bottom: 2em;
 }
+
+.terminal-header {
+  background-color: #e4e3e5;
+  padding: 0.5rem;
+  border-radius: 10px 10px 0 0 ;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:first-of-type {
+  background-color: rgb(223, 121, 121);
+}
+
+.dot:nth-of-type(2) {
+  background-color: orange;
+}
+
+.dot:last-of-type {
+  background-color: lightgreen;
+}
+
 .details {
-  background-image: url(../images/terminal2.png);
-  background-size: 100% 100%;
-  background-position: center top;
-  padding: 2em 0;
+  background-color: #5A5D7A;
+  padding: 0.5rem 0;
   font-family: 'Ubuntu Mono', monospace;
+  font-size: 1.3rem;
 }
 
 .details ul {
@@ -56,7 +82,6 @@ header {
 }
 
 .details li {
-  margin-top: 3em;
   color: gainsboro;
 }
 
@@ -70,22 +95,23 @@ header {
 }
 
 .details p {
-  color: greenyellow;
+  color: #BFCD84;
+  margin-bottom: 3rem;
   padding-left: 1.6em;
 }
 
 .details p a {
-  color: greenyellow;
+  color: #35feff;
   text-decoration: none;
 }
 
 .details p a:hover {
-  color: white;
+  color: #3CD9C9;
 }
 
 .blinking-cursor {
   font-weight: bolder;
-  color: white;
+  color: #747fe0;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
   -ms-animation: 1s blink step-end infinite;
@@ -98,7 +124,7 @@ header {
     color: transparent;
   }
   50% {
-    color: white;
+    color: #747fe0;
   }
 }
 
@@ -107,7 +133,7 @@ header {
     color: transparent;
   }
   50% {
-    color: white;
+    color: #747fe0;
   }
 }
 
@@ -116,7 +142,7 @@ header {
     color: transparent;
   }
   50% {
-    color: white;
+    color: #747fe0;
   }
 }
 
@@ -125,7 +151,7 @@ header {
     color: transparent;
   }
   50% {
-    color: white;
+    color: #747fe0;
   }
 }
 
@@ -134,7 +160,7 @@ header {
     color: transparent;
   }
   50% {
-    color: white;
+    color: #747fe0;
   }
 }
 
@@ -143,31 +169,36 @@ header {
 }
 
 .projects-title, .contact-title {
-  color: greenyellow;
-  text-align: center;
+  color: #5C6882;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin-bottom: 3em;
+  border-bottom: 5px solid #747FE0;
 }
 
 .project-card {
-  background-image: url(../images/p1.jpg);
-  background-position: 100% 65%;
+  background: url(../images/mobile-devices-2017980_1280.png), whitesmoke;
+  background-repeat: no-repeat;
+  background-position: 4% 50%, top right;
+  background-size: 30%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #00275f;
+  display: flex;
+  justify-content: end;
+  padding: 3rem 5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;;
 }
 
 .project-detail {
-  background: whitesmoke;
-  width: 60%;
-  text-align: right;
-  padding: 4em 2em;
+  width: 65%;
+  text-align: left;
 }
 
 .project-detail span {
-  border: 2px solid black;
-  border-radius: 0.5em;
+  border: 2px solid rgb(14, 53, 11);
+  background-color: white;
   padding: 0.5em;
-  margin: 0.5em;
+  margin-right: 0.5em;
   font-size: 0.8em;
 }
 
@@ -175,35 +206,36 @@ header {
   margin-top: 2em;
 }
 
-.project-links a {
-  text-decoration: none;
+.project-links button {
+  background-color: rgb(145, 37, 145);
+  color: white;
+  font-weight: bold;
 }
 
-.project-links a:hover {
-  color: black;
-}
 .contact-info {
-  text-align: center;
+  display: flex;
+  justify-content: space-around;
 }
-.contact-info a {
-  color: whitesmoke;
-  margin: 3em;
+
+/* .contact-info a  */
+.contact-link a {
   text-decoration: none;
+  color: #5a5d7a;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1.2em;
 }
 
-.contact-info a:hover {
-  color: greenyellow;
-  text-emphasis:
+
+.contact-link a:hover {
+  color: #92B2F9;
+  border-bottom: 3px solid #5a5d7a;
 }
 
-.contact {
-  margin-bottom: 6em;
-}
 
 footer {
-  color: greenyellow;
+  margin-top: 10rem;
+  color: #5a5d7a;
   text-align: center;
-  font-size: 0.7em;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
