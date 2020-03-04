@@ -17,6 +17,10 @@ nav {
   }
 }
 
+.terminal {
+  min-width: 200px;
+}
+
 .terminal-header {
   background-color: #e4e3e5;
   padding: 0.5rem;
@@ -36,5 +40,38 @@ nav {
   }
   &:first-of-type {
     background-color: rgb(223, 121, 121);
+  }
+}
+
+.details {
+  background-color: #5A5D7A;
+  padding: 0.5rem 0;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1rem;
+  ul {
+    list-style: none;
+    li {
+      color: gainsboro;
+      &::before {
+        content: "\003E"; /* Unicode bullet symbol */
+        color: gainsboro;  /* Bullet color */
+        /* Optional tweaks */
+        font-weight: bold;
+        padding-right: 1em;
+      }
+    }
+  }
+  p {
+    color: #BFCD84;
+    margin-bottom: 3rem;
+    padding-left: 1.6em;
+    a {
+      color: #35feff;
+      text-decoration: none;
+      &:hover {
+        color: #3CD9C9;
+      }
+    }
+    
   }
 }

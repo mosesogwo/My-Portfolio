@@ -13,6 +13,9 @@ nav {
     nav a:hover {
       color: #A1A9EA; }
 
+.terminal {
+  min-width: 200px; }
+
 .terminal-header {
   background-color: #e4e3e5;
   padding: 0.5rem;
@@ -29,5 +32,32 @@ nav {
     background-color: orange; }
   .dot:first-of-type {
     background-color: #df7979; }
+
+.details {
+  background-color: #5A5D7A;
+  padding: 0.5rem 0;
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1rem; }
+  .details ul {
+    list-style: none; }
+    .details ul li {
+      color: gainsboro; }
+      .details ul li::before {
+        content: "\003E";
+        /* Unicode bullet symbol */
+        color: gainsboro;
+        /* Bullet color */
+        /* Optional tweaks */
+        font-weight: bold;
+        padding-right: 1em; }
+  .details p {
+    color: #BFCD84;
+    margin-bottom: 3rem;
+    padding-left: 1.6em; }
+    .details p a {
+      color: #35feff;
+      text-decoration: none; }
+      .details p a:hover {
+        color: #3CD9C9; }
 
 /*# sourceMappingURL=main.css.map */
