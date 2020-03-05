@@ -58,8 +58,8 @@ nav {
   display: flex;
   justify-content: space-evenly;
   margin: 40px auto;
-  width: 150px;
-  font-size: .8rem; }
+  width: 180px;
+  font-size: 1rem; }
   nav a {
     text-decoration: none;
     color: #5a5d7a; }
@@ -83,6 +83,9 @@ h3 {
 
 .name {
   color: #747FE0; }
+
+.intro, .projects, .contact {
+  margin-bottom: 4em; }
 
 .intro-text {
   text-align: justify;
@@ -131,18 +134,19 @@ h3 {
 .projects-title, .contact-title {
   text-align: center;
   color: #5a5d7a;
-  padding-top: 4em;
+  padding-top: 3em;
   padding-bottom: 1.7em; }
 
 .project-card {
   background: white;
   padding: 1rem; }
-  .project-card .project-detail {
-    min-height: 370px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: justify; }
+
+.project-detail {
+  min-height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: justify; }
 
 .project-tag {
   display: inline-flex;
@@ -180,5 +184,25 @@ footer {
   justify-content: center;
   padding: 50px 0;
   font-size: .7em; }
+
+@media only screen and (min-width: 768px) {
+  body {
+    padding: .2em 2em; }
+
+  nav {
+    font-size: 1.3em;
+    width: 300px;
+    margin-left: auto;
+    margin-right: 0; }
+
+  .project-detail {
+    min-height: 280px; }
+
+  .contact-info {
+    flex-direction: row;
+    min-height: 18em; } }
+@media only screen and (min-width: 1024px) {
+  body {
+    padding: .2em 9em; } }
 
 /*# sourceMappingURL=main.css.map */
