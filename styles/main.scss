@@ -56,12 +56,13 @@ body {
   font-size: 1em;
   line-height: 1.3em;
   font-family: 'Spartan', sans-serif;
+  padding: 1em;
 }
 
 nav {
   display: flex;
   justify-content: space-evenly;
-  margin: 0 auto;
+  margin: 40px auto;
   width: 150px;
   font-size: .8rem;
   a {
@@ -73,8 +74,31 @@ nav {
   }
 }
 
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+
+.name {
+  color: #747FE0;
+}
+
 .intro-text {
   text-align: justify;
+  margin-bottom: 40px;
 }
 
 .terminal {
@@ -104,43 +128,36 @@ nav {
 }
 
 .details {
-  background-color: #5A5D7A;
-  padding: 0.5rem 0;
-  // font-family: 'Ubuntu Mono', monospace;
-  font-family: 'Fira Code', monospace;
-  font-size: .8rem;
-  ul {
-    list-style: none;
-    padding: .5rem;
-    li {
-      color: gainsboro;
-      &::before {
-        content: "\003E"; /* Unicode bullet symbol */
-        color: gainsboro;  /* Bullet color */
-        /* Optional tweaks */
-        font-weight: bold;
-        padding-right: .5em;
-      }
+  background-color: rgb(91, 94, 117);
+  padding: 1.5em;
+}
+
+.detail-group {
+  margin: 2em .5em;
+}
+
+.detail-title {
+  color: white;
+}
+
+.detail-info {
+  color: rgb(255, 179, 160);
+  margin-left: 1em;
+  margin-top: 5px;
+  a {
+    text-decoration: none;
+    color: rgb(0, 255, 195);
+    &:hover {
+      color: whitesmoke;
     }
-  }
-  p {
-    color: #BFCD84;
-    margin-bottom: 3rem;
-    padding-left: 1.6em;
-    a {
-      color: #35feff;
-      text-decoration: none;
-      &:hover {
-        color: #3CD9C9;
-      }
-    }
-    
   }
 }
 
 .projects-title, .contact-title{
   text-align: center;
   color: #5a5d7a;
+  padding-top: 4em;
+  padding-bottom: 1.7em;
 }
 
 .project-card {
@@ -148,10 +165,11 @@ nav {
   padding: 1rem;
 
   .project-detail {
-    min-height: 350px;
+    min-height: 370px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    text-align: justify;
   }
 }
 
@@ -163,17 +181,15 @@ nav {
 }
 
 .project-links {
-  // display: inline-flex;
-  display: inline-block;
-  flex-direction: column;
-  justify-content: flex-start;
   button {
     border-radius: 7px;
+    padding: 0.5em;
+    margin-right: 10px;
   }
 }
 
 .live-demo-btn {
-  background-color: #92AAF9;
+  background-color: rgb(98, 130, 233);
   color: white;
 }
 
@@ -182,11 +198,12 @@ nav {
 }
 
 .contact-info {
-  height: 200px;
+  min-height: 20rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin: 1.5em 0;
   a {
     text-decoration: none;
     color: #5a5d7a;
@@ -199,4 +216,6 @@ nav {
 footer {
   display: flex;
   justify-content: center;
+  padding: 50px 0;
+  font-size: .7em;
 }
