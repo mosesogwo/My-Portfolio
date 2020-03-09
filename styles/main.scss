@@ -182,7 +182,7 @@ h3 {
 }
 
 .project-detail {
-  min-height: 380px;
+  max-height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -190,6 +190,11 @@ h3 {
   p {
     line-height: 1em;
   }
+}
+
+.project-tags {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .project-tag {
