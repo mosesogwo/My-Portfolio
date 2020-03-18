@@ -186,6 +186,7 @@ h3 {
 }
 
 .project-img {
+  display: none;
   text-align: center;
 }
 
@@ -194,7 +195,10 @@ h3 {
 }
 
 .project-detail {
-  text-align: center;
+  text-align: justify;
+  h3 {
+    text-align: center;
+  }
 }
 
 
@@ -274,13 +278,16 @@ footer {
 
   .project-card {
     flex-direction: row;
+    padding: 2em;
   }
-  // .project-detail {
-  //   min-height: 270px;
-  // }
+
+  .project-detail {
+    margin: 0 2em;
+    text-align: center;
+  }
 
   .project-img {
-    width: 50%;
+    display: flex;
   }
 
   .contact-info {

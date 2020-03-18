@@ -156,13 +156,16 @@ h3 {
   border-radius: 30px; }
 
 .project-img {
+  display: none;
   text-align: center; }
 
 .project-img img {
   border-radius: 50%; }
 
 .project-detail {
-  text-align: center; }
+  text-align: justify; }
+  .project-detail h3 {
+    text-align: center; }
 
 .project-tags {
   margin-top: 1em;
@@ -223,10 +226,15 @@ footer {
     margin-right: 0; }
 
   .project-card {
-    flex-direction: row; }
+    flex-direction: row;
+    padding: 2em; }
+
+  .project-detail {
+    margin: 0 2em;
+    text-align: center; }
 
   .project-img {
-    width: 50%; }
+    display: flex; }
 
   .contact-info {
     flex-direction: row;
