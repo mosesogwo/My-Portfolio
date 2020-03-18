@@ -175,22 +175,29 @@ h3 {
 }
 
 .project-card {
+  display: flex;
+  align-items: center;
+  line-height: 2em;
+  margin-top: 2em;
+  flex-direction: column;
+  padding: 1em;
   background: white;
-  padding: 1rem;
-  margin-bottom: 2em;
-  border-radius: 20px;
+  border-radius: 30px;
+}
+
+.project-img {
+  text-align: center;
+}
+
+.project-img img {
+  border-radius: 50%;
 }
 
 .project-detail {
-  max-height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: justify;
-  p {
-    line-height: 1em;
-  }
+  margin-left: 1em;
+  text-align: center;
 }
+
 
 .project-tags {
   margin-top: 1em;
@@ -266,8 +273,15 @@ footer {
     margin-right: 0;;
   }
 
-  .project-detail {
-    min-height: 270px;
+  .project-card {
+    flex-direction: row;
+  }
+  // .project-detail {
+  //   min-height: 270px;
+  // }
+
+  .project-img {
+    width: 50%;
   }
 
   .contact-info {
@@ -281,13 +295,23 @@ footer {
     padding: .2em 9em;
   }
 
-  .project-detail {
-    margin-left: 40%;
-  }
+  // .project-detail {
+  //   margin-left: 40%;
+  // }
 
-  .project-card {
-    background-image: url(../images/code2.jpg);
-    background-size: 37% 100%;
-    background-repeat: no-repeat;
+  // .project-card {
+  //   background-size: 37% 100%;
+  //   background-repeat: no-repeat;
+  // }
+
+  // .project-card:first-of-type {
+  //   background-image: url(/images/half-bship.png);
+  //   background-size: cover;
+  // }
+
+  // .project-card:nth-of-type(2) {
+  //   background-image: url(/images/half-xplore.png);
+  //   background-size: auto;
+  //   background-repeat: no-repeat;
+  //   box-shadow: 0 50px 100px rgba(50,50,93,.05),0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.1);
   }
-}

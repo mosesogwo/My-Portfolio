@@ -146,19 +146,24 @@ h3 {
   border-bottom: .5rem solid; }
 
 .project-card {
+  display: flex;
+  align-items: center;
+  line-height: 2em;
+  margin-top: 2em;
+  flex-direction: column;
+  padding: 1em;
   background: white;
-  padding: 1rem;
-  margin-bottom: 2em;
-  border-radius: 20px; }
+  border-radius: 30px; }
+
+.project-img {
+  text-align: center; }
+
+.project-img img {
+  border-radius: 50%; }
 
 .project-detail {
-  max-height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: justify; }
-  .project-detail p {
-    line-height: 1em; }
+  margin-left: 1em;
+  text-align: center; }
 
 .project-tags {
   margin-top: 1em;
@@ -218,22 +223,17 @@ footer {
     margin-left: auto;
     margin-right: 0; }
 
-  .project-detail {
-    min-height: 270px; }
+  .project-card {
+    flex-direction: row; }
+
+  .project-img {
+    width: 50%; }
 
   .contact-info {
     flex-direction: row;
     min-height: 18em; } }
 @media only screen and (min-width: 1024px) {
   body {
-    padding: .2em 9em; }
-
-  .project-detail {
-    margin-left: 40%; }
-
-  .project-card {
-    background-image: url(../images/code2.jpg);
-    background-size: 37% 100%;
-    background-repeat: no-repeat; } }
+    padding: .2em 9em; } }
 
 /*# sourceMappingURL=main.css.map */
