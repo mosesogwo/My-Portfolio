@@ -215,6 +215,10 @@ h3 {
   text-align: center;
 }
 
+.project-img img {
+  border-radius: 1.2em;
+}
+
 .project-detail {
   text-align: justify;
 }

@@ -188,6 +188,9 @@ h3 {
 .project-img {
   display: none;
   text-align: center;
+  img {
+    border-radius: 1.2em;
+  }
 }
 
 .project-detail {
