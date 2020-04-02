@@ -217,6 +217,7 @@ h3 {
 
 .project-img img {
   border-radius: 1.2em;
+  outline: none;
 }
 
 .project-detail {
